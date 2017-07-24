@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern-mapping>
+    <pattern name="username" type="regexp">
+        <exp>[A-Za-z\\+]+(\\.[_A-Za-z]+)*</exp>
+    </pattern>
+    
+    <pattern name="password" type="code">
+        <imports>
+            import java.util.*;
+        </imports>
+        <code>
+            if(input.trim().length()>0)
+            {
+                return true;
+            }
+        </code>
+    </pattern>
+    
+    <pattern name="pattern_2" type="regexp">
+        <exp>^[1-9][0-9]{1,15}$</exp>
+    </pattern>
+    
+     <pattern name="arth" type="regexp">
+        <exp>(\\d{1,10}[+*-/])+\\d{1,10}$</exp>
+    </pattern>
+    
+    
+    <pattern name="pattern_21" type="code"> <!--regexp -->
+        <!-- If type is code -->
+        <imports>
+            import java.util.*;
+        </imports>
+        <code>
+            if(input.equalsIgnoreCase("51632272"))
+            {
+                return true;
+            }
+        </code>
+        <function>
+            static String display(String a)
+            {
+                return a.toUpperCase();
+            }
+        </function>
+    </pattern>
+    
+    <pattern name="employee_id" type="code">
+        <file lang="java" path-type="class" class="com.hcl.ai_bot.customPattern.Phone"/>
+    </pattern>
+    
+    <pattern name="employee_id51" type="regexp"> <!--regexp -->
+        <!-- If regexp -->
+        <exp>java regular expression</exp>
+        <!-- End of regexp -->
+    </pattern>
+    <!--
+        Planning to load class files in remote servers using url's custom class loader defineclass()
+        Waiting for opinion on this.
+        -->    
+</pattern-mapping>
