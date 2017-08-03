@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pattern-mapping>
-    <pattern name="username" type="regexp">
-        <exp>[A-Za-z\\+]+(\\.[_A-Za-z]+)*</exp>
-    </pattern>
-    
     <pattern name="password" type="code">
         <imports>
             import java.util.*;

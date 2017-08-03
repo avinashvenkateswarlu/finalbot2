@@ -60,7 +60,15 @@ public class Preparator1 {
                     try
                     {
                     JSONObject ob=(JSONObject) p;
-                        if(!(ob.getString("name").equalsIgnoreCase("Default Fallback Intent") || ob.getString("name").equalsIgnoreCase("Default Welcome Intent")))
+                    ArrayList<String> al=new ArrayList<>();
+                    al.add("availablegames");
+                    al.add("getretailerthroughzipcode");
+                    al.add("nextdrawdetails");
+                    al.add("Currentwinning numbers");
+                    al.add("getretailersthroughcityname");
+                    
+                    
+                        if(al.contains(ob.get("name")))
                         {
                             HashMap<String,String> temp=new HashMap<>();
                             temp.put("id", ob.getString("id")+"");
@@ -84,7 +92,7 @@ public class Preparator1 {
                 out.print("Failure. Unable to contect api.ai servers.<br/>Please try after some time.");
             }
         
-            
+            appContext.log("\nprepared: "+new JSONObject(intents).toString(8)+"\n");
     }
     
     private HashMap<String,String> getintentdata(String id,JspWriter out) throws Exception
@@ -137,7 +145,9 @@ public class Preparator1 {
                     }
                 }
                 catch(Exception ex)
-                {}
+                {
+                    ex.printStackTrace();
+                }
             }
             
             //out.print(ob.toString()+"<br/><hr/>");

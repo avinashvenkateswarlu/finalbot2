@@ -273,7 +273,7 @@ public class QueryForMatch {
                         }
                     
                 
-                appContext.log("\ngoing to call:\n "+intents.toString());
+                appContext.log("\ngoing to call: from java match\n "+intents.toString());
                 
                 if(result.trim().length()==0)
                 {
