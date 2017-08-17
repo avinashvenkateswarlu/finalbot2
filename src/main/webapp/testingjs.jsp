@@ -21,10 +21,19 @@
             String req="";
             while(sc.hasNext())
             {
-                req=req+sc.nextLine();
+                req=req+sc.nextLine()+"\n";
             }
             
-            application.log(new Testing().parsethrequest(new JSONObject(req)));
+            try
+            {
+                JSONObject jb=new JSONObject(req);
+                application.log(new Testing().parsethrequest(jb));
+                
+            }
+            catch(Exception ex)
+            {
+                application.log("not able to parse the following json in testings.jsp\n"+req);
+            }
             
             %>
     </body>

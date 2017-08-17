@@ -28,7 +28,7 @@
     </context-param>
     <context-param>
         <param-name>host name</param-name>
-        <param-value>localhost:8089/AI-Bot </param-value>
+        <param-value>localhost:8080/AI-Bot</param-value>
     </context-param>
     <!--End of setting context parameters -->
     <listener>

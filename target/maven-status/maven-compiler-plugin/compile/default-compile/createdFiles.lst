@@ -8,10 +8,14 @@ com/hcl/ai_bot/common/Database_oper.class
 com/hcl/ai_bot/npl/pattern/Preparator.class
 com/hcl/ai_bot/common/IntentProcessor.class
 com/hcl/ai_bot/customPattern/Phone.class
+com/hcl/testing/nj/intents/WinningNumbers.class
 com/hcl/testing/nj/intents/Exit.class
 com/hcl/testing/nj/intents/login.class
+com/hcl/testing/Testing.class
 com/hcl/ai_bot/common/CommonFuns.class
+com/hcl/testing/nj/intents/Gameslist.class
 com/hcl/testing/nj/intents/Getretailers.class
+com/hcl/testing/nj/intents/Nextdrawdate.class
 com/hcl/ai_bot/common/AppstartupLogic$1.class
 com/hcl/ai_bot/process/ProcessMessage.class
 com/hcl/ai_bot/process/NewClientSetUp.class
